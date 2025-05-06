@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-block-end: 0;
+    padding-block-start: 0;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+@font-face {
+    font-family: "rezvan";
+    src: url("fonts/Rezvan.ttf") format(woff);
+}
+@font-face {
+    font-family: "ziba";
+    src: url("fonts/B\ Ziba_0.ttf") format(woff);
+}
+
+#background {
+    background-image: linear-gradient(to bottom right, rgb(1, 1, 31) 15%, rgb(51, 51, 51) 60%, rgb(24, 24, 24));
+    min-width: 300px;
+}
+
+#body-header {
+    background-image: url(icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 72px 72px;
+    background-position-x: 99%;
+    background-color: rgba(255, 255, 0, 0.863);
+    padding: 30px 6px;
+    text-align: center;
+    font-family: "rezvan";
+    margin-bottom: 30px;
+    font-size: smaller;
+    padding-right: 5.4em;
+}
+#body-main{
+    display: block;
+    background-color: blue;
+    padding: 30px 0;
+    border-radius: 30px;
+    width: 78%;
+    margin: auto;
+    font-family: "ziba";
+    color: white;
+}
+.images{
+    width: 87%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.img{
+    width: 30%;
+}
+.bq, .p {
+    padding: 15px;
+}
+.h{
+    text-align: center;
+    color: bisque;
+    font-size: larger;
+}
+.price{
+    text-align: left;
+    padding: 30px 9% 24px;
+    color: brown;
+    text-shadow: 1px 1px 1px white, 2px 2px 2px red, 3px 3px 3px yellow;
+    font-size: 1.2em;
+}
+.price-num{
+    text-decoration: underline;
+}
+#body-footer{
+    padding: 12% 9%;
+    text-align: right;
+    color: rgb(235, 235, 138);
+    font-family: "rezvan";
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: 45px;
+}
+.info{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: end;
+    padding: 6% 0;
+}
+.name{
+    padding-left: 15%;
+}
+.social{
+    display: flex;
+    flex-flow: column;
+    line-height: 2;
+}
+.links{
+    width: 60%;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.username {
+    color: rgb(248, 105, 224);
+}
+#body-footer a{
+    display: inline-flex;
+    color: aqua;
+    align-self: self-end;
+}
+
+@media screen and (min-width: 450px){
+    .social{
+        flex-flow: column;
+        justify-content: space-between !important;
+    }
+    #body-header{
+        font-size: larger;
+        padding-right: 4.2em;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    #background{
+        font-size: 1rem;
+    }
+    #body-header{
+        background-size: contain;
+        padding-right: 3em;
+    }
+    #body-footer{
+        padding: 0 15%;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    #background{
+        font-size: 1.5rem;
+    }
+    #body-footer{
+        padding: 9%;
+    }
+}
